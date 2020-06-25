@@ -1,0 +1,53 @@
+.form-group {
+  label {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  input,
+  select {
+    border: 3px solid;
+  }
+}
+
+.label-checkbox {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: right;
+}
+.checkbox {
+  padding: 0;
+  margin: 0;
+  clear: both;
+  li {
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 10px;
+    float: left;
+  }
+
+  input[type="checkbox"]:not(:checked),
+  input[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999%;
+  }
+
+  input[type="checkbox"] + label {
+    display: inline-block;
+    padding: 8px 50px;
+    cursor: pointer;
+    border: 3px solid #495057;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 0.25rem;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  input[type="checkbox"]:checked + label {
+    border: 1px solid white;
+    color: white;
+    background-color: #212529;
+  }
+}

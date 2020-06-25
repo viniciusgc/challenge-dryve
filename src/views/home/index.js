@@ -1,69 +1,76 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import Layout from "../container/layout";
-import { Row, Col } from "reactstrap";
-import { MainCard } from "../../components";
+import { Row, Col, Container, Button, Form } from "reactstrap";
+import {
+  HeaderInfo,
+  Input,
+  Select,
+  Checkbox,
+  Steps,
+} from "../../components/index";
+import { FontAwesome } from "react-web-vector-icons";
+
 import "./style.scss";
 
 class Home extends Component {
-  state = {
-    cards: [
-      {
-        date: "16 Jun 2020",
-        name: "Clarise Lispector",
-        status: "Em análise",
-        result: "Texto de exemplo  Covid 01",
-        color: "yellow",
-      },
-      {
-        date: "20 Agos 2020",
-        name: "Jorge Amado",
-        status: "Negativo",
-        result: "Texto de exemplo  Covid 02",
-        color: "green",
-      },
-      {
-        date: "25 Set 2020",
-        name: "Guimarães Rosa",
-        status: "Positivo",
-        result: "Texto de exemplo  Covid 03",
-        color: "red",
-      },
-      {
-        date: "25 Set 2020",
-        name: "Guimarães Rosa",
-        status: "Positivo",
-        result: "Texto de exemplo  Covid 03",
-        color: "red",
-      },
-    ],
-  };
+  state = {};
 
   render() {
-    const { cards } = this.state;
+    const handleSubmit = (data) => {
+      console.log("data", data);
+    };
+
     return (
       <Layout>
-        <Row className="mainTitle mt-5">
-          <Col md={3}>
-            <span>Data</span>
-          </Col>
-          <Col md={3}>
-            <span>Nome</span>
-          </Col>
-          <Col md={3}>
-            <span>Status</span>
-          </Col>
-          <Col md={3}>
-            <span>Resultado probabilístico</span>
-          </Col>
-        </Row>
-        <Row className="mt-3">
-          <Col md={12}>
-            {cards.map((card) => (
-              <MainCard card={card} />
-            ))}
-          </Col>
-        </Row>
+        <HeaderInfo />
+        <Steps />
+        <Container>
+          <Row className="mt-5 text-center section-form">
+            <Col>
+              <h2>Dados Pessoais</h2>
+            </Col>
+          </Row>
+          <Row className="mt-5">
+            <Col>
+              <Form onSubmit={handleSubmit}>
+                <Row className="px-12">
+                  <Col md={4}>
+                    <Input name="rg" label="Número do rg" />
+                  </Col>
+
+                  <Col md={4}>
+                    <Input name="data" label="Data de emissão" />
+                  </Col>
+
+                  <Col md={4}>
+                    <Select name="rg" label="Orgão expedidor" />
+                  </Col>
+                </Row>
+                <Row>
+                  <Col
+                    md={{ size: 1, offset: 3 }}
+                    className="mt-2 label-gender"
+                  >
+                    <span>Sexo</span>
+                  </Col>
+                  <Col md={5} className="mt-2">
+                    <Checkbox name="sexo" label="Sexo" />
+                  </Col>
+                </Row>
+
+                <Row className="mt-3 text-center mb-5">
+                  <Col>
+                    <Button color="primary" type="submit">
+                      Continuar{" "}
+                      <FontAwesome name="caret-right" color="#fff" size={16} />
+                    </Button>
+                  </Col>
+                </Row>
+              </Form>
+            </Col>
+          </Row>
+        </Container>
       </Layout>
     );
   }

@@ -3,33 +3,35 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   NavLink,
 } from "reactstrap";
-import { AppNavbarBrand } from "@coreui/react";
 import "./style.scss";
-import logo from "../../assets/img/logo.svg";
 
 const Header = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
+
   return (
-    <a href="/">
-      <AppNavbarBrand
-        full={{
-          src: logo,
-          width: 134,
-          height: 43,
-          alt: "Logo",
-        }}
-        minimized={{
-          src: logo,
-          width: 40,
-          height: 40,
-          alt: "Logo",
-        }}
-      />
-    </a>
+    <Navbar color="dark" dark expand="lg">
+      <NavbarToggler onClick={toggle} />
+      <Collapse isOpen={isOpen} navbar>
+        <Nav className="mr-auto"></Nav>
+        <Nav navbar>
+          <NavItem>
+            <NavLink href="#">Como funciona</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#">Privacidade</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="#">Ajuda</NavLink>
+          </NavItem>
+        </Nav>
+      </Collapse>
+    </Navbar>
   );
 };
 
