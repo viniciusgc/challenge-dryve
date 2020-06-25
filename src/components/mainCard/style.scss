@@ -1,0 +1,35 @@
+.mainCard {
+  border-radius: 5px;
+  padding: 5px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #565656;
+  opacity: 1;
+
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  min-height: 55px;
+  @media only screen and (max-width: 64em) {
+    text-align: center;
+    line-height: 2rem;
+  }
+  .status-yellow {
+    color: #fcc40a;
+  }
+  .status-green {
+    color: #40b9c5;
+  }
+  .status-red {
+    color: #ed6c62;
+  }
+}
+.border-yellow {
+  border-left: 5px solid #fcc40a;
+}
+.border-green {
+  border-left: 5px solid #40b9c5;
+}
+.border-red {
+  border-left: 5px solid #ed6c62;
+}

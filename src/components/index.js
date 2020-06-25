@@ -1,2 +1,1 @@
-export { default as Search } from "./Search";
-export { default as ListCars } from "./ListCars";
+export { default as MainCard } from "./mainCard/index";

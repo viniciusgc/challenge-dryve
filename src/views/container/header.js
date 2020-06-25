@@ -1,12 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+} from "reactstrap";
+import { AppNavbarBrand } from "@coreui/react";
 import "./style.scss";
-import logo from "../../assets/img/logo.png";
+import logo from "../../assets/img/logo.svg";
 
-const Header = () => {
+const Header = (props) => {
   return (
-    <div>
-      <img src={logo} className="main-logo" />
-    </div>
+    <a href="/">
+      <AppNavbarBrand
+        full={{
+          src: logo,
+          width: 134,
+          height: 43,
+          alt: "Logo",
+        }}
+        minimized={{
+          src: logo,
+          width: 40,
+          height: 40,
+          alt: "Logo",
+        }}
+      />
+    </a>
   );
 };
 
