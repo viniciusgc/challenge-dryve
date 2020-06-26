@@ -208,7 +208,7 @@ class Home extends Component {
                       Sexo
                     </Label>
                   </Col>
-                  <Col md={5} className="mt-2">
+                  <Col md={5} className="mt-md-2">
                     <Radio
                       name="sexo"
                       label="Sexo"
@@ -221,12 +221,13 @@ class Home extends Component {
                   </Col>
                 </Row>
 
-                <Row className="mt-3 text-center mb-5">
-                  <Col>
+                <Row className="mt-3 mb-5 align-center">
+                  <Col lg="3">
                     <Button
                       color="primary"
                       type="submit"
                       disabled={this.state.invalid.button}
+                      block
                     >
                       Continuar{" "}
                       <FontAwesome name="caret-right" color="#fff" size={16} />

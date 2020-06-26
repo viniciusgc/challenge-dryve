@@ -19,8 +19,11 @@ const Header = (props) => {
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="mr-auto">
+          <NavItem active={window.location.pathname == "/"}>
+            <NavLink href="/">Cadastro Usuários</NavLink>
+          </NavItem>
           <NavItem active={window.location.pathname == "/personal-data"}>
-            <NavLink href="/personal-data">Lista registro</NavLink>
+            <NavLink href="/personal-data">Lista Usuários</NavLink>
           </NavItem>
         </Nav>
         <Nav navbar>

@@ -66,6 +66,7 @@ class PersonalData extends Component {
             title="apagar"
             color="danger"
             onClick={() => this.handleModal(item.id, item.name, "delete")}
+            className="mt-xs-1 "
           >
             <FontAwesome name="trash" color="#fff" size={14} />
           </Button>
@@ -81,10 +82,10 @@ class PersonalData extends Component {
       <Layout>
         <Container>
           <Row className="mt-5 section-list">
-            <Col md={10}>
+            <Col md={10} className="text-xs-center">
               <h3>Dados Pessoais ({users.length})</h3>
             </Col>
-            <Col md={2}>
+            <Col md={2} className="mt-xs-1">
               <Link to="/" className="link-new">
                 <Button color="primary" block renderAs="button">
                   <FontAwesome name="plus" color="#fff" size={16} />

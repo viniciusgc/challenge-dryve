@@ -30,3 +30,14 @@
     border-color: #2ca2bb;
   }
 }
+
+.mt-xs-1 {
+  @media only screen and (max-width: 64em) {
+    margin-top: 1rem;
+  }
+}
+.text-xs-center {
+  @media only screen and (max-width: 64em) {
+    text-align: center;
+  }
+}

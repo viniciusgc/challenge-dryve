@@ -1,23 +1,30 @@
+@media only screen and (min-width: 64em) {
+  .px-12 {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+  .label-gender {
+    text-align: right;
+  }
+}
+
 .section-form {
   h2 {
     font-weight: bold;
     text-transform: uppercase;
   }
 }
-.px-12 {
-  padding-left: 12rem;
-  padding-right: 12rem;
+.align-center {
+  display: flex;
+  justify-content: center;
 }
 
 .col-md-1 {
-  // max-width: 2% !important;
-  // flex: 0%;
   font-weight: bold;
 }
 
 .label-gender {
   font-size: 12px;
-  text-align: right;
   margin-top: auto !important;
   margin-bottom: auto;
   text-transform: uppercase;
