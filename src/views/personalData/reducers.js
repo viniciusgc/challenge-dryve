@@ -1,21 +1,15 @@
 import { ActionTypes as types } from "./constants";
 
 export const initialState = {
-  personalData: {},
-  emittings: [],
+  users: [],
 };
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case types.FETCH_EMITTING:
+    case types.FETCH_PERSONAL_DATA:
       return {
         ...state,
-        emittings: action.payload,
-      };
-    case types.FETCH_PERSONAL_DATA_BY_ID:
-      return {
-        ...state,
-        personalData: action.payload,
+        users: action.payload,
       };
 
     default:

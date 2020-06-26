@@ -18,7 +18,11 @@ const Header = (props) => {
     <Navbar color="dark" dark expand="lg">
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
-        <Nav className="mr-auto"></Nav>
+        <Nav className="mr-auto">
+          <NavItem active={window.location.pathname == "/personal-data"}>
+            <NavLink href="/personal-data">Lista registro</NavLink>
+          </NavItem>
+        </Nav>
         <Nav navbar>
           <NavItem>
             <NavLink href="#">Como funciona</NavLink>

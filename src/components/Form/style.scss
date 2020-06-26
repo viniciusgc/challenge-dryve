@@ -15,7 +15,7 @@
   margin-bottom: auto;
   text-align: right;
 }
-.checkbox {
+.radio {
   padding: 0;
   margin: 0;
   clear: both;
@@ -26,13 +26,13 @@
     float: left;
   }
 
-  input[type="checkbox"]:not(:checked),
-  input[type="checkbox"]:checked {
+  input[type="radio"]:not(:checked),
+  input[type="radio"]:checked {
     position: absolute;
     left: -9999%;
   }
 
-  input[type="checkbox"] + label {
+  input[type="radio"] + label {
     display: inline-block;
     padding: 8px 50px;
     cursor: pointer;
@@ -45,9 +45,16 @@
     text-transform: uppercase;
   }
 
-  input[type="checkbox"]:checked + label {
-    border: 1px solid white;
+  input[type="radio"]:checked + label {
+    border: 3px solid #495057;
     color: white;
-    background-color: #212529;
+    background-color: #495057;
   }
+}
+.radio .invalid-radio + label {
+  border-color: #dc3545 !important;
+}
+
+.invalid {
+  color: #dc3545;
 }
