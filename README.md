@@ -7,6 +7,7 @@
 - [Redux](https://redux.js.org) - A predictable state container for JavaScript apps
 - [Redux Persist](https://github.com/rt2zz/redux-persist) - Persist and rehydrate a redux store
 - [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
+- [Reactstrap](https://reactstrap.github.io/) - React components for faster and easier web development
 
 ## Up and running
 
@@ -19,8 +20,7 @@
 - `yarn build`: Builds the app for production
 - `yarn deploy`: Deploy the app to the github pages
 - `yarn test`: Run tests once
-- `yarn test --watch`: Run tests in watch mode
 
 ## License
 
-- © [Vinícius Guellis](https://github.com/viniciusgc)
+- [MIT](https://github.com/viniciusgc/challenge-exacta/blob/master/LICENSE) © [Vinícius Guellis](https://github.com/viniciusgc)
