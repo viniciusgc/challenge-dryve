@@ -26,7 +26,6 @@ class Home extends Component {
     if (id) {
       await this.props.fetchPersonalData(id);
       this.setState({ ...this.props.personalData });
-      console.log(id);
     }
     this.props.fetchEmitting();
   }
