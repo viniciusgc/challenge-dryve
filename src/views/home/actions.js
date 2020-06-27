@@ -21,8 +21,7 @@ export const createPersonalData = (data) => (dispatch) => {
   client
     .post(`${API.PERSONALDATA}`, data)
     .then((response) => {
-      toast.success("Sucesso ao salvar os dados");
-      window.location.href = "/personal-data";
+      window.location.href = "/personal-data?created=true";
     })
     .catch((e) => {
       console.log(e);
@@ -47,8 +46,7 @@ export const updatePersonalData = (id, data) => (dispatch) => {
   client
     .put(`${API.PERSONALDATA}/${id}`, data)
     .then((response) => {
-      toast.success("Sucesso ao atualizar os dados");
-      window.location.href = "/personal-data";
+      window.location.href = "/personal-data?updated=true";
     })
     .catch((e) => {
       console.log(e);

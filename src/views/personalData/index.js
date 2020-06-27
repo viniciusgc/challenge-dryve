@@ -6,11 +6,22 @@ import { Row, Col, Container, Button, Table, Alert } from "reactstrap";
 import { FontAwesome } from "react-web-vector-icons";
 import { fetchPersonalData, deletePersonalData } from "./actions";
 import { ConfirmationModal } from "../../components";
+import qs from "qs";
+import { toast } from "react-toastify";
 
 import "./style.scss";
 
 class PersonalData extends Component {
   async componentDidMount() {
+    let params = qs.parse(window.location.search, { ignoreQueryPrefix: true });
+
+    if (params.created) {
+      toast.success("Sucesso ao salvar os dados");
+    }
+
+    if (params.updated) {
+      toast.success("Sucesso ao atualizar os dados");
+    }
     await this.props.fetchPersonalData();
   }
 
