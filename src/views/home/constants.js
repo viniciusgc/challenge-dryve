@@ -1,5 +1,1 @@
-export const ActionTypes = {
-  FETCH_EMITTING: "FETCH_EMITTING",
-  FETCH_EMITTING: "FETCH_EMITTING",
-  FETCH_PERSONAL_DATA_BY_ID: "FETCH_PERSONAL_DATA_BY_ID",
-};
+export const ActionTypes = {};
