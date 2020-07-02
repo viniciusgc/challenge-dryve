@@ -12,7 +12,11 @@ class Home extends Component {
   state = {};
 
   render() {
-    return <Layout></Layout>;
+    return (
+      <Layout>
+        <h1>Test</h1>
+      </Layout>
+    );
   }
 }
 

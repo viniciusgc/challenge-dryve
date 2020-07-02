@@ -1,0 +1,56 @@
+// CoreUI Icons Set
+@import "~@coreui/icons/css/all.css";
+
+// Import styles
+@import "~@coreui/coreui/scss/coreui";
+
+@import "../../scss/variables.scss";
+
+.c-app {
+  background-color: $pale-grey;
+  .navbar {
+    padding: 0.5rem 53px;
+    box-shadow: 0 1px 0 0 $white;
+    background-color: $white-two;
+    .navbar-brand {
+      margin-right: 7px;
+    }
+    .backoffice {
+      font-family: "Roboto", sans-serif;
+      width: 59px;
+      height: 10px;
+      font-size: 10px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: normal;
+      color: #a5abb7;
+      text-transform: uppercase;
+      margin-top: 5px;
+    }
+    .ic_search {
+      object-fit: contain;
+    }
+    .ic_notifications {
+      object-fit: contain;
+    }
+  }
+
+  .c-sidebar {
+    border: none;
+    box-shadow: 1px 0 0 0 $white;
+  }
+  .c-sidebar-minimized.c-sidebar-fixed {
+    width: 80px;
+  }
+}
+
+.c-main > .container-fluid,
+.c-main > .container-sm,
+.c-main > .container-md,
+.c-main > .container-lg,
+.c-main > .container-xl {
+  padding-right: 53px;
+  padding-left: 53px;
+}

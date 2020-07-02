@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  Nav,
-  NavItem,
-  NavLink,
-} from "reactstrap";
+  CNavbar,
+  CToggler,
+  CNavbarBrand,
+  CCollapse,
+  CNavbarNav,
+  CNavLink,
+} from "@coreui/react";
 import "./style.scss";
+import logo from "../../assets/img/logo.svg";
+import icSearch from "../../assets/img/ic-search.svg";
+import IcNotifications from "../../assets/img/ic-notifications.svg";
 
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,30 +18,24 @@ const Header = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar color="dark" dark expand="lg">
-      <NavbarToggler onClick={toggle} />
-      <Collapse isOpen={isOpen} navbar>
-        <Nav className="mr-auto">
-          <NavItem active={window.location.pathname == "/"}>
-            <NavLink href="/">Cadastro Usuários</NavLink>
-          </NavItem>
-          <NavItem active={window.location.pathname == "/personal-data"}>
-            <NavLink href="/personal-data">Lista Usuários</NavLink>
-          </NavItem>
-        </Nav>
-        <Nav navbar>
-          <NavItem>
-            <NavLink href="#">Como funciona</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="#">Privacidade</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="#">Ajuda</NavLink>
-          </NavItem>
-        </Nav>
-      </Collapse>
-    </Navbar>
+    <div>
+      <CNavbar expandable="sm" light>
+        <CNavbarBrand>
+          <img src={logo} className="Primary" />
+        </CNavbarBrand>
+        <span className="backoffice">backoffice</span>
+        <CCollapse show={isOpen} navbar>
+          <CNavbarNav className="ml-auto">
+            <CNavLink>
+              <img src={icSearch} className="ic_search" />
+            </CNavLink>
+            <CNavLink>
+              <img src={IcNotifications} className="ic_notifications" />
+            </CNavLink>
+          </CNavbarNav>
+        </CCollapse>
+      </CNavbar>
+    </div>
   );
 };
 
