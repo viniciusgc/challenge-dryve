@@ -5,6 +5,7 @@
 @import "~@coreui/coreui/scss/coreui";
 
 @import "../../scss/variables.scss";
+@import "../../scss/style.scss";
 
 .c-app {
   background-color: $pale-grey;
@@ -41,43 +42,71 @@
   }
 
   .c-sidebar {
+    width: 240px;
     border: none;
     box-shadow: 1px 0 0 0 $white;
+    .nav-profile {
+      margin-top: 45px;
+      .avatar-border {
+        width: 65px;
+        height: 58px;
+        border: solid 4px $bright-blue;
+        background-color: $white-two;
+        border-radius: 28px;
+        .profile {
+          border-radius: 50px;
+          width: 50px;
+          height: 50px;
+        }
+      }
+      .sair {
+        opacity: 0.5;
+        font-family: "Inter", sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: 1.5px;
+        color: $black-87;
+        text-transform: uppercase;
+        margin-left: 0.3rem;
+      }
+    }
+    .ic_home {
+      width: 20px;
+      height: 17px;
+      object-fit: contain;
+    }
+    .ic_person {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+      opacity: 0.8;
+    }
+    .ic_directions_car {
+      width: 18px;
+      height: 16px;
+      object-fit: contain;
+      opacity: 0.8;
+    }
+    .ic_vector_triangle {
+      width: 20px;
+      height: 19px;
+      object-fit: contain;
+      opacity: 0.8;
+    }
+    .ic_account_balance_wallet {
+      width: 19px;
+      height: 18px;
+      object-fit: contain;
+      opacity: 0.7;
+    }
   }
   .c-sidebar-minimized.c-sidebar-fixed {
     width: 80px;
   }
 
-  .text-style-2 {
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.14;
-    letter-spacing: 0.1px;
-    color: $bright-blue;
-  }
-  .text-style-3 {
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.14;
-    letter-spacing: 0.1px;
-    color: $black-87;
-  }
-  .text-style {
-    font-family: "Inter", sans-serif;
-    font-size: 10px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.6;
-    letter-spacing: 1.5px;
-    color: $black-87;
-  }
   .c-main > .container-fluid,
   .c-main > .container-sm,
   .c-main > .container-md,
@@ -86,6 +115,71 @@
     @media only screen and (min-width: 64em) {
       padding-right: 53px;
       padding-left: 53px;
+    }
+  }
+}
+
+html:not([dir="rtl"]) .c-sidebar-nav-icon:first-child {
+  margin-left: 0rem;
+  margin-right: 1rem;
+}
+
+.c-sidebar.c-sidebar-light .c-sidebar-nav-link:hover,
+.c-sidebar.c-sidebar-light .c-sidebar-nav-dropdown-toggle:hover {
+  color: $bright-blue;
+  background: $ice-blue;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.1px;
+}
+
+.c-sidebar.c-sidebar-light .c-sidebar-nav-link,
+.c-sidebar.c-sidebar-light .c-sidebar-nav-dropdown-toggle {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.1px;
+  color: $black-87;
+  background: transparent;
+}
+
+.container-footer {
+  @media only screen and (min-width: 64em) {
+    padding-right: 53px;
+    padding-left: 53px;
+  }
+  .c-footer {
+    padding-top: 1rem;
+    display: block;
+    background-color: transparent;
+    .dryve-tecnolo {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.57;
+      letter-spacing: normal;
+      color: $brownish-grey;
+    }
+    .verso-101 {
+      opacity: 0.5;
+      font-family: "Roboto", sans-serif;
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: right;
+      color: $slate-grey;
     }
   }
 }
