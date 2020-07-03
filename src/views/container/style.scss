@@ -9,7 +9,10 @@
 .c-app {
   background-color: $pale-grey;
   .navbar {
-    padding: 0.5rem 53px;
+    @media only screen and (min-width: 64em) {
+      padding: 0.5rem 53px;
+    }
+
     box-shadow: 0 1px 0 0 $white;
     background-color: $white-two;
     .navbar-brand {
@@ -44,13 +47,45 @@
   .c-sidebar-minimized.c-sidebar-fixed {
     width: 80px;
   }
-}
 
-.c-main > .container-fluid,
-.c-main > .container-sm,
-.c-main > .container-md,
-.c-main > .container-lg,
-.c-main > .container-xl {
-  padding-right: 53px;
-  padding-left: 53px;
+  .text-style-2 {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: 0.1px;
+    color: $bright-blue;
+  }
+  .text-style-3 {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: 0.1px;
+    color: $black-87;
+  }
+  .text-style {
+    font-family: "Inter", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+    color: $black-87;
+  }
+  .c-main > .container-fluid,
+  .c-main > .container-sm,
+  .c-main > .container-md,
+  .c-main > .container-lg,
+  .c-main > .container-xl {
+    @media only screen and (min-width: 64em) {
+      padding-right: 53px;
+      padding-left: 53px;
+    }
+  }
 }

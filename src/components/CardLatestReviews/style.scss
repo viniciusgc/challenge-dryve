@@ -1,0 +1,184 @@
+@import "../../scss/variables.scss";
+
+.card-reviews {
+  max-height: 640px;
+  .card-header {
+    border-bottom: none;
+    padding-bottom: 0px;
+    .ltimas-avaliaes {
+      width: 127px;
+      height: 24px;
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: 0.1px;
+      color: $black-87;
+    }
+
+    .drop-period {
+      list-style: none;
+    }
+    .hoje {
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: 0.1px;
+      text-align: right;
+      color: $black-87;
+    }
+  }
+  .card-body {
+    overflow: scroll;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    table {
+      thead {
+        text-transform: uppercase;
+        opacity: 0.5;
+        th {
+          border-top: none;
+          border-bottom: 1px solid #d8dbe0;
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-bottom: 1.2rem;
+        }
+      }
+      tbody {
+        td {
+          padding-left: 20px;
+          padding-right: 20px;
+          .rectangle {
+            width: 80px;
+            height: 60px;
+            border-radius: 4px;
+            border: solid 1px $white;
+          }
+          .car-info {
+            line-height: 14px;
+            .car-name {
+              height: 16px;
+              font-family: "Inter", sans-serif;
+              font-size: 12px;
+              font-weight: bold;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1.33;
+              letter-spacing: normal;
+              color: $dark-blue-grey;
+            }
+            .car-code {
+              font-family: "Inter", sans-serif;
+              font-size: 10px;
+              font-weight: normal;
+              font-stretch: normal;
+              font-style: normal;
+              line-height: 1;
+              letter-spacing: 0.33px;
+              color: $steel;
+              text-transform: uppercase;
+            }
+          }
+          .anuncio {
+            font-family: "Inter", sans-serif;
+            font-size: 10px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: 0.33px;
+            color: $steel;
+            text-transform: uppercase;
+          }
+          .r-115560 {
+            font-family: "Inter", sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            color: $dark-blue-grey;
+          }
+          .r-115561 {
+            font-family: "Inter", sans-serif;
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            color: #a5abb7;
+          }
+          .section {
+            line-height: 15px;
+          }
+          .car-info-two {
+            line-height: 0px;
+          }
+          .aguardando-precifica {
+            font-family: "Inter", sans-serif;
+            font-size: 12px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1;
+            letter-spacing: normal;
+            text-align: center;
+            color: $steel;
+          }
+          .rectangle-info {
+            width: 176px;
+            height: 26px;
+            margin-top: 6px;
+            border-radius: 13px;
+            background-color: $ice-blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .car-info-three {
+            line-height: 12px;
+
+            .date-info {
+              text-align: center;
+              width: 176px;
+              .s-1435 {
+                font-family: "Inter", sans-serif;
+                font-size: 11px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: center;
+                color: #a5abb7;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .card-footer {
+    text-align: right;
+    .ver-tudo {
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: 0.1px;
+      text-align: right;
+      color: $bright-blue;
+    }
+  }
+}

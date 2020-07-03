@@ -1,3 +1,4 @@
 export const API = {
-  BASE: "https://5ef533feef110d001687c59f.mockapi.io/",
+  BASE: "http://www.mocky.io/v2/",
+  CARS: "5eb553df31000060006994a8",
 };

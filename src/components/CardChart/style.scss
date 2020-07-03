@@ -1,0 +1,26 @@
+@import "../../scss/variables.scss";
+
+.card-chart {
+  margin-top: 2rem;
+  height: 226px;
+}
+
+.price {
+  width: 145px;
+  height: 24px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.1px;
+  color: $black-87;
+}
+
+.ic_help {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  margin-left: 0.5rem;
+}

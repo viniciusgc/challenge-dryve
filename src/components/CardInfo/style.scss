@@ -1,0 +1,73 @@
+@import "../../scss/variables.scss";
+
+.card-info {
+  .card-body {
+    padding: 0.68rem 1.25rem;
+  }
+
+  .main-text {
+    opacity: 0.5;
+    text-transform: uppercase;
+  }
+
+  .number {
+    font-family: "Inter", sans-serif;
+    font-size: 34px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.06;
+    letter-spacing: normal;
+    color: $black-87;
+  }
+
+  .oval {
+    background-color: $ice-blue;
+    @media only screen and (min-width: 1190px) {
+      width: 64px;
+      height: 64px;
+    }
+    @media only screen and (max-width: 1190px) and (min-width: 899px) {
+      width: 50px;
+      height: 50px;
+    }
+    @media only screen and (max-width: 800px) {
+      width: 64px;
+      height: 64px;
+    }
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ic_directions_car {
+      width: 24px;
+      height: 23px;
+      object-fit: contain;
+    }
+  }
+
+  .percentage {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+    color: $blue-violet;
+  }
+
+  .period {
+    opacity: 0.5;
+    font-family: "Inter", sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+    color: $black-87;
+    margin-left: 0.3rem;
+  }
+}
