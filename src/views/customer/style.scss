@@ -1,0 +1,69 @@
+@import "../../scss/variables.scss";
+.btn-filter {
+  width: 106px;
+  background-color: $white-two;
+  border-color: $white-two;
+  .label {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: $blue-violet;
+    text-transform: uppercase;
+  }
+  .icon-btn {
+    display: flex;
+    flex-direction: column;
+  }
+  .ic_filter_list {
+    width: 18px;
+    height: 12px;
+    object-fit: contain;
+  }
+  &:hover {
+    background-color: $pale-grey;
+    border-color: $white;
+  }
+}
+.input-text {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.1px;
+  width: 372px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.btn-add {
+  width: 130px;
+  height: 36px;
+  border-radius: 4px;
+  background-color: $blue-violet;
+  .label {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: $white-two;
+    text-transform: uppercase;
+  }
+}
+
+.icon-filter {
+  color: $bright-blue;
+}
+.icon-plus {
+  color: $white-two;
+  font-weight: 700;
+}

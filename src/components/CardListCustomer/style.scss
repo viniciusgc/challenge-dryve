@@ -1,0 +1,99 @@
+@import "../../scss/variables.scss";
+
+.card-customer {
+  height: 760px;
+  .table {
+    thead {
+      text-transform: uppercase;
+      opacity: 0.5;
+      th {
+        border-top: none;
+        border-bottom: 1px solid #d8dbe0;
+        padding-bottom: 1.2rem;
+      }
+    }
+    tbody {
+      padding-bottom: 0px;
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: 0.1px;
+      color: $black-87;
+      td {
+        padding: 1.1rem 0.75rem !important;
+      }
+      .rectangle {
+        width: 80px;
+        height: 26px;
+        border-radius: 13px;
+        background-color: $ice-blue;
+        text-align: center;
+      }
+      .rectangle-lead {
+        width: 80px;
+        height: 26px;
+        border-radius: 13px;
+        background-color: $white-three;
+        text-align: center;
+      }
+      .cliente {
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: center;
+        color: $bright-blue;
+      }
+      .lead {
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        text-align: center;
+        color: $brownish-grey-two;
+      }
+    }
+
+    .checkbox {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+.drop-page {
+  list-style: none;
+}
+
+.itens-por-pgina {
+  width: 87px;
+  height: 14px;
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #a5abb7;
+}
+
+.page {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.1px;
+  text-align: right;
+  color: $black-87;
+}
