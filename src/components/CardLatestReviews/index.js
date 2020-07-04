@@ -48,7 +48,7 @@ const CardLatestReviews = ({ cars }) => {
                   {cars.map((car) => (
                     <tr>
                       <td>
-                        <CRow>
+                        <CRow className="info-car">
                           <CCol md="3" className="pr-0  mb-xs-1">
                             <img
                               src={car.image}

@@ -67,7 +67,12 @@
             border: solid 1px $white;
           }
           .car-info {
-            line-height: 14px;
+            @media only screen and (min-width: 64em) {
+              line-height: 14px;
+            }
+            @media only screen and (max-width: 768px) and (min-width: 541px) {
+              padding-left: 10px !important;
+            }
             .car-name {
               height: 16px;
               font-family: "Inter", sans-serif;
@@ -75,9 +80,11 @@
               font-weight: bold;
               font-stretch: normal;
               font-style: normal;
-              line-height: 1.33;
               letter-spacing: normal;
               color: $dark-blue-grey;
+              @media only screen and (min-width: 64em) {
+                line-height: 1.33;
+              }
             }
             .car-code {
               font-family: "Inter", sans-serif;
@@ -85,10 +92,12 @@
               font-weight: normal;
               font-stretch: normal;
               font-style: normal;
-              line-height: 1;
               letter-spacing: 0.33px;
               color: $steel;
               text-transform: uppercase;
+              @media only screen and (min-width: 64em) {
+                line-height: 1;
+              }
             }
           }
           .anuncio {
@@ -186,5 +195,12 @@
       text-align: right;
       color: $bright-blue;
     }
+  }
+}
+
+.info-car {
+  @media only screen and (max-width: 768px) and (min-width: 541px) {
+    display: flex;
+    flex-direction: column;
   }
 }
