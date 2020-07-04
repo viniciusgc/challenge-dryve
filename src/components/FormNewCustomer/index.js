@@ -7,7 +7,7 @@ const FormNewCustomer = () => {
 
   return (
     <CRow>
-      <CCol md="6">
+      <CCol xl="6">
         <CForm action="" method="post" className="form-customer">
           <CFormGroup>
             <CRow className="mt-4">

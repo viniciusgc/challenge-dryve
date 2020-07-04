@@ -1,5 +1,10 @@
 @import "../../scss/variables.scss";
 .btn-filter {
+  @media only screen and (max-width: 64em) {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
   width: 106px;
   background-color: $white-two;
   border-color: $white-two;
@@ -37,11 +42,24 @@
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.1px;
-  width: 372px;
   color: rgba(0, 0, 0, 0.6);
+  @media only screen and (min-width: 64em) {
+    width: 372px;
+  }
+  @media only screen and (max-width: 64em) {
+    margin-left: 0px !important;
+  }
+  @media only screen and (max-width: 1024px) and (min-width: 800px) {
+    width: 100%;
+  }
 }
 
 .btn-add {
+  @media only screen and (max-width: 64em) {
+    display: block;
+    width: 100%;
+    margin-top: 1rem !important;
+  }
   width: 130px;
   height: 36px;
   border-radius: 4px;
@@ -57,6 +75,9 @@
     text-align: center;
     color: $white-two;
     text-transform: uppercase;
+  }
+  @media only screen and (max-width: 64em) {
+    margin-top: 3rem;
   }
 }
 

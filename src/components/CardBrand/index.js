@@ -33,14 +33,14 @@ const CardBrand = () => {
                 <tr>
                   <td>
                     <CRow>
-                      <CCol md="10" xs="8" sm="6">
+                      <CCol>
                         <img
                           src={hyundai}
                           srcset={`${hyundai2} 2x, ${hyundai3} 3x`}
                           alt="band"
                         />
                       </CCol>
-                      <CCol md="2" xs="4" sm="6" className="col-number">
+                      <CCol className="col-number">
                         <span className="number">197</span>
                       </CCol>
                     </CRow>
@@ -49,14 +49,14 @@ const CardBrand = () => {
                 <tr>
                   <td>
                     <CRow>
-                      <CCol md="10" xs="8" sm="6">
+                      <CCol>
                         <img
                           src={chevrolet}
                           srcset={`${chevrolet2} 2x, ${chevrolet3} 3x`}
                           alt="band"
                         />
                       </CCol>
-                      <CCol md="2" xs="4" sm="6" className="col-number">
+                      <CCol className="col-number">
                         <span className="number">183</span>
                       </CCol>
                     </CRow>
@@ -65,14 +65,14 @@ const CardBrand = () => {
                 <tr>
                   <td>
                     <CRow>
-                      <CCol md="10" xs="8" sm="6">
+                      <CCol>
                         <img
                           src={jeep}
                           srcset={`${jeep2} 2x, ${jeep3} 3x`}
                           alt="band"
                         />
                       </CCol>
-                      <CCol md="2" xs="4" sm="6" className="col-number">
+                      <CCol className="col-number">
                         <span className="number">125</span>
                       </CCol>
                     </CRow>
@@ -81,14 +81,14 @@ const CardBrand = () => {
                 <tr>
                   <td>
                     <CRow>
-                      <CCol md="10" xs="8" sm="6">
+                      <CCol>
                         <img
                           src={volks}
                           srcset={`${volks2} 2x, ${volks3} 3x`}
                           alt="band"
                         />
                       </CCol>
-                      <CCol md="2" xs="4" sm="6" className="col-number">
+                      <CCol className="col-number">
                         <span className="number">109</span>
                       </CCol>
                     </CRow>
@@ -97,14 +97,14 @@ const CardBrand = () => {
                 <tr>
                   <td>
                     <CRow>
-                      <CCol md="10" xs="8" sm="6">
+                      <CCol>
                         <img
                           src={nissan}
                           srcset={`${nissan2} 2x, ${nissan3} 3x`}
                           alt="band"
                         />
                       </CCol>
-                      <CCol md="2" xs="4" sm="6" className="col-number">
+                      <CCol className="col-number">
                         <span className="number">86</span>
                       </CCol>
                     </CRow>

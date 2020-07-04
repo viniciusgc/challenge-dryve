@@ -15,6 +15,7 @@ const CardChart = () => {
       },
     ],
     options: {
+      maintainAspectRatio: false,
       cutoutPercentage: 80,
       responsive: true,
       legend: {
@@ -31,7 +32,7 @@ const CardChart = () => {
       layout: {
         padding: {
           left: 0,
-          right: 60,
+          right: 0,
           top: 10,
           bottom: 10,
         },

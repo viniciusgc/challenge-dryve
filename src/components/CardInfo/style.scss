@@ -11,6 +11,9 @@
     @media only screen and (max-width: 768px) and (min-width: 541px) {
       min-height: 31px;
     }
+    @media only screen and (max-width: 1000px) and (min-width: 800px) and (orientation: landscape) {
+      min-height: 31px;
+    }
   }
 
   .number {
@@ -27,17 +30,32 @@
     @media only screen and (min-width: 769px) {
       font-size: 34px;
     }
+    @media only screen and (max-width: 1000px) and (min-width: 800px) and (orientation: landscape) {
+      font-size: 24px;
+    }
   }
 
   .oval {
-    background-color: $ice-blue;
-    width: 64px;
-    height: 64px;
     @media only screen and (max-width: 768px) and (min-width: 541px) {
       width: 100%;
       height: 21px;
     }
+    @media only screen and (max-width: 1100px) and (min-width: 1023px) {
+      width: 53px;
+      height: 53px;
+    }
+    @media only screen and (max-width: 1000px) and (min-width: 800px) and (orientation: landscape) {
+      width: 34px;
+      height: 34px;
+    }
+    @media only screen and (max-width: 799px) and (min-width: 640px) and (orientation: landscape) {
+      width: 65px;
+      height: 65px;
+    }
 
+    background-color: $ice-blue;
+    width: 64px;
+    height: 64px;
     border-radius: 50px;
     display: flex;
     align-items: center;

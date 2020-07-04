@@ -47,7 +47,9 @@ const CardListCustomer = ({ customers }) => {
                           className="checkbox"
                         />
                       </td>
-                      <td>{customer.name}</td>
+                      <td>
+                        <div className="name-section">{customer.name}</div>
+                      </td>
                       <td>
                         <div
                           className={
@@ -65,7 +67,9 @@ const CardListCustomer = ({ customers }) => {
                           </span>
                         </div>
                       </td>
-                      <td>{customer.phone}</td>
+                      <td>
+                        <div className="phone-section">{customer.phone}</div>
+                      </td>
                       <td>
                         <div className="d-flex justify-content-between">
                           {customer.email}

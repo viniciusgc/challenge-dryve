@@ -11,19 +11,19 @@ class Customers extends Component {
     return (
       <Layout>
         <CRow>
-          <CCol md="1">
+          <CCol xl="1" md="12" xs="12">
             <CButton color="primary" className="btn-filter">
               <i class="cil-list-filter icon-filter mr-2"></i>
               <span className="label">Filtrar</span>
             </CButton>
           </CCol>
-          <CCol md="4">
+          <CCol xl="4" md="12" xs="12">
             <CInput
               className="mr-sm-2 input-text ml-md-2"
               placeholder="Buscar por nome..."
             />
           </CCol>
-          <CCol md="7">
+          <CCol xl="7" md="12" xs="12">
             <CButton
               color="primary"
               className="btn-add float-right"

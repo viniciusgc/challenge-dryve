@@ -16,11 +16,13 @@ const Header = ({ opneSidebar }) => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <CNavbar expandable="sm" light>
+      <CNavbar expandable="xl" light>
         <CToggler inNavbar onClick={opneSidebar} />
 
         <CNavbarBrand>
-          <img src={logo} className="Primary" alt="logo" />
+          <a href="/">
+            <img src={logo} className="Primary" alt="logo" />
+          </a>
         </CNavbarBrand>
         <span className="backoffice">backoffice</span>
         <CToggler inNavbar onClick={() => setIsOpen(!isOpen)} />

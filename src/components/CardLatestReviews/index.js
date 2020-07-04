@@ -49,28 +49,28 @@ const CardLatestReviews = ({ cars }) => {
                     <tr>
                       <td>
                         <CRow className="info-car">
-                          <CCol md="3" className="pr-0  mb-xs-1">
+                          <CCol className="d-flex align-items-center">
                             <img
                               src={car.image}
                               className="rectangle"
                               alt="car"
                             />
-                          </CCol>
-                          <CCol className="pl-md-0 car-info">
-                            <span className="car-name ">{`${car.brand_name} ${car.model_name}`}</span>
-                            <br />
-                            <span className="car-code">GDL8019</span>
-                            <br />
-                            <span className="car-code">{`${car.manufacturing_year} ${car.fuel_type}`}</span>
-                            <br />
-                            <span className="car-code">{`${
-                              car.transmission_type
-                            } ${car.mileage
-                              .toString()
-                              .replace(
-                                /\B(?=(\d{3})+(?!\d))/g,
-                                "."
-                              )} Km`}</span>
+                            <div className=" car-info ml-3">
+                              <span className="car-name ">{`${car.brand_name} ${car.model_name}`}</span>
+                              <br />
+                              <span className="car-code">GDL8019</span>
+                              <br />
+                              <span className="car-code">{`${car.manufacturing_year} ${car.fuel_type}`}</span>
+                              <br />
+                              <span className="car-code">{`${
+                                car.transmission_type
+                              } ${car.mileage
+                                .toString()
+                                .replace(
+                                  /\B(?=(\d{3})+(?!\d))/g,
+                                  "."
+                                )} Km`}</span>
+                            </div>
                           </CCol>
                         </CRow>
                       </td>

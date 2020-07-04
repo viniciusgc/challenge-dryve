@@ -50,7 +50,7 @@ const CardNewCustomer = () => {
       <CCardFooter>
         <CRow>
           <CCol>
-            <CButton color="primary" className="btn-save mr-md-3">
+            <CButton color="primary" className="btn-save mr-3">
               Salvar
             </CButton>
             <a className="btn-cancel" href="/customers">

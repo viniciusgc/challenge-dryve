@@ -1,7 +1,7 @@
 @import "../../scss/variables.scss";
 
 .card-customer {
-  height: 760px;
+  min-height: 760px;
   .table {
     thead {
       text-transform: uppercase;
@@ -96,4 +96,15 @@
   letter-spacing: 0.1px;
   text-align: right;
   color: $black-87;
+}
+
+.name-section {
+  @media only screen and (max-width: 64em) {
+    width: 200px;
+  }
+}
+.phone-section {
+  @media only screen and (max-width: 64em) {
+    width: 144px;
+  }
 }
