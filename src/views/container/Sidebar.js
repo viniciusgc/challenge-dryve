@@ -32,7 +32,7 @@ const Sidebar = (props) => {
         </a>
       </CSidebarNavItem>
       <CSidebarNavItem>
-        <a className="c-sidebar-nav-link" href="/customer">
+        <a className="c-sidebar-nav-link" href="/customers">
           <img
             src={icClient}
             className="ic_person c-sidebar-nav-icon"

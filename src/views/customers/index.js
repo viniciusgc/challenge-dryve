@@ -6,7 +6,7 @@ import { CardListCustomer } from "../../components";
 
 import "./style.scss";
 
-class Customer extends Component {
+class Customers extends Component {
   render() {
     const { customers } = this.props;
     return (
@@ -51,4 +51,4 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = {};
 
-export default connect(mapStateToProps, mapDispatchToProps)(Customer);
+export default connect(mapStateToProps, mapDispatchToProps)(Customers);
