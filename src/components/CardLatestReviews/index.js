@@ -14,7 +14,6 @@ import "./style.scss";
 import icArrowDown from "../../assets/img/ic-arrow-drop-down_2.svg";
 
 const CardLatestReviews = ({ cars }) => {
-  console.log("cars", cars);
   return (
     <CCard className="card-reviews">
       <CCardHeader>
@@ -46,7 +45,7 @@ const CardLatestReviews = ({ cars }) => {
                 </thead>
                 <tbody>
                   {cars.map((car) => (
-                    <tr>
+                    <tr key={car.version_uuid}>
                       <td>
                         <CRow className="info-car">
                           <CCol className="d-flex align-items-center">

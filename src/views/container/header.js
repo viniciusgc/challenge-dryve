@@ -23,8 +23,8 @@ const Header = ({ opneSidebar }) => {
           <a href="/">
             <img src={logo} className="Primary" alt="logo" />
           </a>
+          <span className="backoffice">backoffice</span>
         </CNavbarBrand>
-        <span className="backoffice">backoffice</span>
         <CToggler inNavbar onClick={() => setIsOpen(!isOpen)} />
         <CCollapse show={isOpen} navbar>
           <CNavbarNav className="ml-auto">

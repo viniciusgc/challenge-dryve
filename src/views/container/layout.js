@@ -36,7 +36,6 @@ const Layout = ({ children }) => {
         onMouseLeave={() => {
           toggleLeave();
         }}
-        size="md"
         show={isShow}
       >
         <Sidebar />
