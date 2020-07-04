@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import Layout from "../container/layout";
 import { CRow, CCol, CButton, CInput } from "@coreui/react";
 import { CardListCustomer } from "../../components";
-
 import "./style.scss";
 
 class Customers extends Component {
@@ -25,7 +24,11 @@ class Customers extends Component {
             />
           </CCol>
           <CCol md="7">
-            <CButton color="primary" className="btn-add float-right">
+            <CButton
+              color="primary"
+              className="btn-add float-right"
+              onClick={() => (window.location = "/customer")}
+            >
               <i class="cil-plus mr-2 icon-plus"></i>
               <span className="label">Adicionar</span>
             </CButton>

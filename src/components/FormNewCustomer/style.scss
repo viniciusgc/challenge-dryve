@@ -1,0 +1,21 @@
+@import "../../scss/variables.scss";
+.form-customer {
+  input.form-control.form-control-lg {
+    height: 56px;
+  }
+  .adicionar-outro {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.1px;
+    text-align: right;
+    color: $bright-blue;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}

@@ -12,6 +12,7 @@ import {
 import "./style.scss";
 import icArrowLeft from "../../assets/img/ic-chevron-left.svg";
 import icArrowRight from "../../assets/img/ic-chevron-right.svg";
+import icMoreVert from "../../assets/img/ic-more-vert.svg";
 
 const CardListCustomer = ({ customers }) => {
   return (
@@ -65,7 +66,16 @@ const CardListCustomer = ({ customers }) => {
                         </div>
                       </td>
                       <td>{customer.phone}</td>
-                      <td>{customer.email}</td>
+                      <td>
+                        <div className="d-flex justify-content-between">
+                          {customer.email}
+                          <img
+                            src={icMoreVert}
+                            class="ic_more_vert"
+                            alt="options"
+                          />
+                        </div>
+                      </td>
                     </tr>
                   ))}
                 </tbody>
