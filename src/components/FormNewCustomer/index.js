@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CForm, CRow, CCol, CInput, CFormGroup } from "@coreui/react";
+import { CForm, CRow, CCol, CInput, CFormGroup, CSelect } from "@coreui/react";
 import "./style.scss";
 
 const FormNewCustomer = () => {
@@ -61,34 +61,68 @@ const FormNewCustomer = () => {
           <CFormGroup>
             <CRow>
               <CCol>
-                <CInput type="text" placeholder="Endereço" size="lg" />
+                <CInput
+                  type="text"
+                  placeholder="Endereço"
+                  size="lg"
+                  className="input-invisible"
+                />
               </CCol>
             </CRow>
           </CFormGroup>
           <CFormGroup>
             <CRow>
               <CCol>
-                <CInput type="text" placeholder="Número" size="lg" />
+                <CInput
+                  type="text"
+                  placeholder="Número"
+                  size="lg"
+                  className="input-invisible"
+                />
               </CCol>
               <CCol>
-                <CInput type="text" placeholder="Complemento" size="lg" />
+                <CInput
+                  type="text"
+                  placeholder="Complemento"
+                  size="lg"
+                  className="input-invisible"
+                />
               </CCol>
             </CRow>
           </CFormGroup>
           <CFormGroup>
             <CRow>
               <CCol>
-                <CInput type="text" placeholder="Bairro" size="lg" />
+                <CInput
+                  type="text"
+                  placeholder="Bairro"
+                  size="lg"
+                  className="input-invisible"
+                />
               </CCol>
             </CRow>
           </CFormGroup>
           <CFormGroup>
             <CRow>
               <CCol>
-                <CInput type="text" placeholder="Cidade" size="lg" />
+                <CInput
+                  type="text"
+                  placeholder="Cidade"
+                  size="lg"
+                  className="input-invisible"
+                />
               </CCol>
               <CCol>
-                <CInput type="text" placeholder="Complemento" size="lg" />
+                <CSelect
+                  type="text"
+                  placeholder="Complemento"
+                  size="lg"
+                  className="input-invisible"
+                >
+                  <option>Estado</option>
+                  <option>SP</option>
+                  <option>RJ</option>
+                </CSelect>
               </CCol>
             </CRow>
           </CFormGroup>
