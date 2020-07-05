@@ -7,7 +7,7 @@
 - [Redux](https://redux.js.org) - A predictable state container for JavaScript apps
 - [Redux Persist](https://github.com/rt2zz/redux-persist) - Persist and rehydrate a redux store
 - [Axios](https://github.com/axios/axios) - Promise based HTTP client for the browser and node.js
-- [Reactstrap](https://reactstrap.github.io/) - React components for faster and easier web development
+- [CoreUi](https://github.com/coreui/coreui-react) - React components for faster and easier web development
 
 ## Up and running
 
