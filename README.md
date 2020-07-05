@@ -23,4 +23,4 @@
 
 ## License
 
-- [MIT](https://github.com/viniciusgc/challenge-exacta/blob/master/LICENSE) © [Vinícius Guellis](https://github.com/viniciusgc)
+- [MIT](https://github.com/viniciusgc/challenge-dryve/blob/master/LICENSE) © [Vinícius Guellis](https://github.com/viniciusgc)
