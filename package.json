@@ -10,7 +10,7 @@
     "@coreui/react": "^3.0.5",
     "@coreui/react-chartjs": "^1.0.1",
     "add": "^2.0.6",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.5.0",
     "font-awesome": "^4.7.0",
     "moment": "^2.27.0",
